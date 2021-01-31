@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://assets/player/idle/player-idle-4.png" type="Texture" id=1]
 [ext_resource path="res://assets/player/run/player-run-2.png" type="Texture" id=2]
@@ -31,7 +31,11 @@ animations = [ {
 "speed": 8.0
 } ]
 
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 12.4403, 13.1245 )
+
 [node name="Player" type="Area2D"]
+position = Vector2( -0.425575, -0.255344 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -39,3 +43,8 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
 animation = "hurt"
+offset = Vector2( 0, -5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0.510687, -2.46834 )
+shape = SubResource( 2 )
