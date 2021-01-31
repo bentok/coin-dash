@@ -3,4 +3,7 @@
     <TargetFramework>net472</TargetFramework>
     <RootNamespace>Coindash</RootNamespace>
   </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="FSharp.Scripting\FSharp.Scripting.fsproj" />
+  </ItemGroup>
 </Project>

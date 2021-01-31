@@ -2,6 +2,8 @@
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coin-dash", "Coin-dash.csproj", "{0695611B-D7AB-4551-8BBC-F5B7C6340D47}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharp.Scripting", "FSharp.Scripting\FSharp.Scripting.fsproj", "{43E15440-0885-4750-B7B9-4480E8370EF3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 	Debug|Any CPU = Debug|Any CPU
@@ -15,5 +17,11 @@ Global
 		{0695611B-D7AB-4551-8BBC-F5B7C6340D47}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
 		{0695611B-D7AB-4551-8BBC-F5B7C6340D47}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
 		{0695611B-D7AB-4551-8BBC-F5B7C6340D47}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+		{43E15440-0885-4750-B7B9-4480E8370EF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43E15440-0885-4750-B7B9-4480E8370EF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43E15440-0885-4750-B7B9-4480E8370EF3}.ExportDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43E15440-0885-4750-B7B9-4480E8370EF3}.ExportDebug|Any CPU.Build.0 = Debug|Any CPU
+		{43E15440-0885-4750-B7B9-4480E8370EF3}.ExportRelease|Any CPU.ActiveCfg = Debug|Any CPU
+		{43E15440-0885-4750-B7B9-4480E8370EF3}.ExportRelease|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 EndGlobal
