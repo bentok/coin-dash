@@ -5,5 +5,11 @@ open Godot
 type PlayerFs() =
     inherit Area2D()
 
+    [<Export>]
+    let mutable Speed = 2.00f
+
     override this._Ready() =
-        GD.Print("Hello from F#!")
+        ignore 0
+
+    override this._Process(delta) =
+        ignore 0
