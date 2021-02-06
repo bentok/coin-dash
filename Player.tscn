@@ -41,11 +41,13 @@ script = ExtResource( 13 )
 __meta__ = {
 "_edit_group_": true
 }
-Speed = 100.0
+Speed = 300.0
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
 animation = "hurt"
+frame = 1
+playing = true
 offset = Vector2( 0, -5 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
