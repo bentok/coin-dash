@@ -29,12 +29,24 @@ type PlayerFs() =
            else ("run", true)
         else ("idle", false)
 
+    let animation (node: PlayerFs) =
+        node.GetNode<AnimatedSprite>(new NodePath("AnimatedSprite"))
+
+    member this.Start pos =
+        this.SetProcess(true)
+        this.Position <- pos
+        animation(this).Animation <- "idle"
+
+    member this.Die () =
+        animation(this).Animation <- "hurt"
+        this.SetProcess(false)
+
     override this._Ready () =
         ignore 0
 
     override this._Process (delta) =
         let velocity = getVeloInput().Normalized() * Speed
-        let sprite = this.GetNode<AnimatedSprite>(new NodePath("AnimatedSprite"))
+        let sprite = animation(this)
         let animation, isFlipped = getAnimationState(velocity)
 
         // Group all class mutation. Consider increasing immutability
