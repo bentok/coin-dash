@@ -41,6 +41,10 @@ type PlayerFs() =
         animation(this).Animation <- "hurt"
         this.SetProcess(false)
 
+    member this._on_Player_area_entered (area: Area2D) =
+        // TODO: Add discriminated union of possible areas
+        ignore 0
+
     override this._Ready () =
         ignore 0
 
