@@ -53,3 +53,4 @@ offset = Vector2( 0, -5 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 0.510687, -2.46834 )
 shape = SubResource( 2 )
+[connection signal="area_entered" from="." to="." method="_on_Player_area_entered"]
